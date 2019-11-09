@@ -2519,6 +2519,12 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="-1206-16V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="-1206-16V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF"/>
 <part name="U$3" library="AD8671" deviceset="AD8671" device=""/>
+<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="1206" package3d_urn="urn:adsk.eagle:package:39654/1" value="1  .1%"/>
+<part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.00k"/>
+<part name="R13" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1.00k"/>
+<part name="U$4" library="LT6105" deviceset="LT6105" device=""/>
+<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R19" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10.0k"/>
 </parts>
 <sheets>
 <sheet>
@@ -3143,6 +3149,29 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <attribute name="NAME" x="306.324" y="89.281" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="306.324" y="84.201" size="1.778" layer="96" font="vector"/>
 </instance>
+<instance part="R11" gate="G$1" x="200.66" y="127" smashed="yes">
+<attribute name="NAME" x="200.66" y="128.524" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="200.66" y="125.476" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R12" gate="G$1" x="195.58" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="194.056" y="116.84" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="197.104" y="116.84" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R13" gate="G$1" x="205.74" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.216" y="116.84" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="207.264" y="116.84" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="U$4" gate="G$1" x="208.28" y="104.14" smashed="yes" rot="MR270">
+<attribute name="NAME" x="190.5" y="104.14" size="2.54" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="210.82" y="93.98" size="2.54" layer="96" rot="MR270"/>
+</instance>
+<instance part="SUPPLY15" gate="GND" x="210.82" y="68.58" smashed="yes">
+<attribute name="VALUE" x="208.915" y="65.405" size="1.778" layer="96"/>
+</instance>
+<instance part="R19" gate="G$1" x="205.74" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="205.74" y="69.596" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="205.74" y="72.644" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3254,6 +3283,22 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <wire x1="228.6" y1="86.36" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="U$4" gate="G$1" pin="P$7"/>
+<wire x1="210.82" y1="101.6" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$8"/>
+<wire x1="210.82" y1="99.06" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<junction x="210.82" y="99.06"/>
+<pinref part="U$4" gate="G$1" pin="V-"/>
+<wire x1="210.82" y1="96.52" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
+<junction x="210.82" y="96.52"/>
+<wire x1="210.82" y1="78.74" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<junction x="210.82" y="78.74"/>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<junction x="210.82" y="71.12"/>
+</segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
@@ -3266,18 +3311,12 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <label x="162.56" y="210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="VIN"/>
-<wire x1="236.22" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
-<label x="215.9" y="127" size="1.778" layer="95"/>
-<pinref part="U1" gate="A" pin="EN+"/>
-<wire x1="231.14" y1="127" x2="215.9" y2="127" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="127" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="121.92" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
-<junction x="231.14" y="127"/>
-<pinref part="U1" gate="A" pin="EN-"/>
-<wire x1="231.14" y1="121.92" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="116.84" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
-<junction x="231.14" y="121.92"/>
+<wire x1="195.58" y1="127" x2="185.42" y2="127" width="0.1524" layer="91"/>
+<label x="185.42" y="127" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="127" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
+<junction x="195.58" y="127"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -3374,6 +3413,11 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <junction x="317.5" y="205.74"/>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
 <junction x="294.64" y="205.74"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="V+"/>
+<wire x1="190.5" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
+<label x="182.88" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="6V_PWR_ENA" class="0">
@@ -3538,6 +3582,50 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <pinref part="U1" gate="A" pin="C-"/>
 <wire x1="228.6" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="U1" gate="A" pin="VIN"/>
+<wire x1="205.74" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="EN+"/>
+<wire x1="231.14" y1="127" x2="236.22" y2="127" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="127" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="121.92" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
+<junction x="231.14" y="127"/>
+<pinref part="U1" gate="A" pin="EN-"/>
+<wire x1="231.14" y1="121.92" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="116.84" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
+<junction x="231.14" y="121.92"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="127" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
+<junction x="205.74" y="127"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="IN+"/>
+<wire x1="195.58" y1="111.76" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="IN-"/>
+<wire x1="205.74" y1="111.76" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HK_5V_C" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="OUT"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="73.66" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="71.12" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="58.42" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
+<junction x="200.66" y="71.12"/>
+<label x="220.98" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
