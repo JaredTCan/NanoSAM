@@ -169,6 +169,8 @@
 <wire x1="-17.78" y1="45.72" x2="17.78" y2="45.72" width="0.254" layer="94"/>
 <pin name="VUSB" x="-20.32" y="30.48" length="middle"/>
 <pin name="PROGRAM" x="-20.32" y="27.94" length="middle"/>
+<text x="-17.78" y="48.26" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
