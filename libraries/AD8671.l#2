@@ -114,8 +114,6 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <wire x1="7.62" y1="0" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <pin name="NC" x="-5.08" y="-12.7" length="short" direction="nc"/>
-<pin name="NC2" x="-5.08" y="-15.24" length="short" direction="nc"/>
-<pin name="NC3" x="-5.08" y="-17.78" length="short" direction="nc"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -125,6 +123,14 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 </gates>
 <devices>
 <device name="" package="SO8">
+<connects>
+<connect gate="G$1" pin="+" pad="3"/>
+<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="NC" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="V+" pad="7"/>
+<connect gate="G$1" pin="V-" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
