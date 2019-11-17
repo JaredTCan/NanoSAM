@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -1736,7 +1736,7 @@ design rules under a new name.</description>
 <wire x1="-44.32" y1="48.26" x2="-48.26" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.49" y1="63.5" x2="-48.26" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.01" y1="67.31" x2="-48.26" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="15.3" y1="68.1" x2="-22.01" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="15.275" y1="68.125" x2="-22.01" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="19.7744" y1="16.08866875" x2="15.4056" y2="16.08866875" width="0" layer="19" extent="1-1"/>
 <wire x1="19.7744" y1="18.59056875" x2="19.7744" y2="16.08866875" width="0" layer="19" extent="1-1"/>
 <wire x1="32.89" y1="69.8" x2="19.2" y2="68.1" width="0" layer="19" extent="1-1"/>
@@ -1794,8 +1794,7 @@ design rules under a new name.</description>
 <vertex x="36" y="0"/>
 </polygon>
 <wire x1="-95.67" y1="-31.75" x2="-113" y2="-72" width="0" layer="19" extent="1-1"/>
-<wire x1="84.19" y1="34.15" x2="-95.67" y2="-31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-56.3" y1="59.69" x2="84.19" y2="34.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.3" y1="59.69" x2="-95.67" y2="-31.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.49" y1="59.69" x2="-56.3" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.3" y1="63.5" x2="-56.3" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.87" y1="59.69" x2="-52.49" y2="59.69" width="0" layer="19" extent="1-1"/>
@@ -1827,7 +1826,8 @@ design rules under a new name.</description>
 <wire x1="45" y1="45.95" x2="51.14" y2="44.81" width="0" layer="19" extent="1-1"/>
 <wire x1="67.73" y1="71.925" x2="71" y2="86" width="0" layer="19" extent="1-1"/>
 <wire x1="67.87" y1="63.925" x2="67.73" y2="71.925" width="0" layer="19" extent="1-1"/>
-<wire x1="74.098" y1="15.768" x2="39.48" y2="23.22" width="0" layer="19" extent="1-1"/>
+<wire x1="84.19" y1="34.15" x2="84.16" y2="52.43" width="0" layer="19" extent="1-1"/>
+<wire x1="74.098" y1="15.768" x2="84.19" y2="34.15" width="0" layer="19" extent="1-1"/>
 <wire x1="76.13" y1="13.99" x2="74.098" y2="15.768" width="0" layer="19" extent="1-1"/>
 <wire x1="74.098" y1="12.268" x2="76.13" y2="13.99" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1850,13 +1850,15 @@ design rules under a new name.</description>
 <contactref element="R34" pad="2"/>
 <contactref element="R35" pad="2"/>
 <contactref element="R36" pad="2"/>
+<wire x1="82.34" y1="31.36" x2="81.36" y2="31.36" width="0.254" layer="1"/>
+<wire x1="81.36" y1="31.36" x2="81" y2="31" width="0.254" layer="1"/>
+<via x="81" y="31" extent="1-16" drill="0.35"/>
 <wire x1="-114.6" y1="-108" x2="-114.6" y2="-117" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.6" y1="-99" x2="-114.6" y2="-108" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.6" y1="-94" x2="-114.6" y2="-99" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.6" y1="-89" x2="-114.6" y2="-94" width="0" layer="19" extent="1-1"/>
 <wire x1="-88.53" y1="-10.16" x2="-114.6" y2="-89" width="0" layer="19" extent="1-1"/>
-<wire x1="82.34" y1="31.36" x2="-88.53" y2="-10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-68.21" y1="54.61" x2="82.34" y2="31.36" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.21" y1="54.61" x2="-88.53" y2="-10.16" width="0" layer="19" extent="1-1"/>
 <wire x1="-64.4" y1="54.61" x2="-68.21" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.17" y1="54.61" x2="-64.4" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.57" y1="59.69" x2="-51.17" y2="54.61" width="0" layer="19" extent="1-1"/>
@@ -1867,6 +1869,7 @@ design rules under a new name.</description>
 <wire x1="-18.105" y1="47.48" x2="-24.455" y2="47.48" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.82" y1="67.31" x2="-31.33" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="32.89" y1="72.4" x2="-18.105" y2="47.48" width="0" layer="19" extent="1-1"/>
+<wire x1="81" y1="31" x2="32.89" y2="72.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="R17" pad="1"/>
@@ -2105,10 +2108,10 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="ON/OFF"/>
 <contactref element="U$2" pad="3.3V@2"/>
 <contactref element="U$2" pad="3.3V@1"/>
+<wire x1="82.49" y1="34.15" x2="84.14" y2="31.36" width="0" layer="19" extent="1-1"/>
+<wire x1="79.08" y1="37.19" x2="82.49" y2="34.15" width="0" layer="19" extent="1-1"/>
 <wire x1="51.14" y1="39.73" x2="79.08" y2="37.19" width="0" layer="19" extent="1-1"/>
 <wire x1="51.14" y1="47.35" x2="51.14" y2="39.73" width="0" layer="19" extent="1-1"/>
-<wire x1="84.14" y1="31.36" x2="51.14" y2="39.73" width="0" layer="19" extent="1-1"/>
-<wire x1="82.49" y1="34.15" x2="84.14" y2="31.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FLASH_CS1">
 <contactref element="U$16" pad="1"/>
@@ -2173,6 +2176,14 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="D20/A6"/>
 <wire x1="68.92" y1="37.19" x2="-117.4" y2="-94" width="0" layer="19" extent="1-1"/>
 <wire x1="80.54" y1="86" x2="68.92" y2="37.19" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+3.3V">
+<polygon width="0.1524" layer="15">
+<vertex x="36" y="90"/>
+<vertex x="36" y="0"/>
+<vertex x="96" y="0"/>
+<vertex x="96" y="90"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
