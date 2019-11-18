@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4591,7 +4591,6 @@ MELF 0.10 W</description>
 <part name="TP6" library="testpoint" deviceset="TESTPOINT" device=""/>
 <part name="R26" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="R27" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
-<part name="R28" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="TP1" library="testpoint" deviceset="TESTPOINT" device=""/>
 <part name="R29" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="POWER_JACK" device="" package3d_urn="urn:adsk.eagle:package:38231/1"/>
@@ -5588,10 +5587,6 @@ AD797</text>
 <attribute name="NAME" x="317.5" y="92.964" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="317.5" y="89.916" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R28" gate="G$1" x="317.5" y="111.76" smashed="yes">
-<attribute name="NAME" x="317.5" y="113.284" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="317.5" y="110.236" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
 <instance part="TP1" gate="G$1" x="340.36" y="208.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="338.328" y="208.28" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="343.408" y="208.28" size="1.27" layer="96" rot="R90"/>
@@ -6037,8 +6032,16 @@ AD797</text>
 <wire x1="332.74" y1="111.76" x2="340.36" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="TP6" gate="G$1" pin="P$1"/>
 <junction x="332.74" y="111.76"/>
-<wire x1="322.58" y1="111.76" x2="332.74" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="111.76" x2="284.48" y2="111.76" width="0.1524" layer="91"/>
+<junction x="294.64" y="111.76"/>
+<pinref part="U1" gate="A" pin="EPAD"/>
+<wire x1="284.48" y1="111.76" x2="276.86" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<junction x="284.48" y="111.76"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="111.76" x2="332.74" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="124.46" x2="304.8" y2="121.92" width="0.1524" layer="91"/>
@@ -6261,21 +6264,6 @@ AD797</text>
 <junction x="304.8" y="91.44"/>
 <wire x1="304.8" y1="91.44" x2="312.42" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="111.76" x2="284.48" y2="111.76" width="0.1524" layer="91"/>
-<junction x="294.64" y="111.76"/>
-<pinref part="U1" gate="A" pin="EPAD"/>
-<wire x1="284.48" y1="111.76" x2="276.86" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<junction x="284.48" y="111.76"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="111.76" x2="312.42" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="2">

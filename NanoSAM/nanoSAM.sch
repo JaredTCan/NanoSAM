@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5131,6 +5131,11 @@ AD797</text>
 <text x="15.24" y="68.58" size="2.54" layer="97">Board and instrument temperature monitoring</text>
 <text x="15.24" y="63.5" size="1.778" layer="97">1 board thermistor
 4 instrument thermistor connections</text>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="10.16" width="0.1524" layer="97"/>
+<wire x1="15.24" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="97"/>
+<wire x1="134.62" y1="10.16" x2="134.62" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="134.62" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="15.24" y1="53.34" x2="15.24" y2="12.7" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>

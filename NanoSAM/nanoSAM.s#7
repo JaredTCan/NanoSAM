@@ -4807,7 +4807,7 @@ AD797</text>
 <attribute name="VALUE" x="377.444" y="168.021" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="375.92" y="162.56" smashed="yes">
-<attribute name="VALUE" x="373.253" y="159.385" size="1.778" layer="96"/>
+<attribute name="VALUE" x="378.333" y="161.925" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY21" gate="G$1" x="314.96" y="177.8" smashed="yes">
 <attribute name="VALUE" x="312.293" y="174.625" size="1.778" layer="96"/>
@@ -5253,13 +5253,6 @@ AD797</text>
 <label x="373.38" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HK_BRD_THRM" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="D17/A3"/>
-<wire x1="365.76" y1="142.24" x2="378.46" y2="142.24" width="0.1524" layer="91"/>
-<label x="373.38" y="142.24" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FLASH_CS1" class="0">
 <segment>
 <wire x1="322.58" y1="60.96" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
@@ -5299,11 +5292,39 @@ AD797</text>
 <label x="309.88" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HK_INST_THRM" class="0">
+<net name="HK_INST_THRM0" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D20/A6"/>
 <wire x1="365.76" y1="149.86" x2="378.46" y2="149.86" width="0.1524" layer="91"/>
 <label x="373.38" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HK_BRD_THRM" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="D17/A3"/>
+<wire x1="365.76" y1="142.24" x2="378.46" y2="142.24" width="0.1524" layer="91"/>
+<label x="373.38" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HK_INST_THRM1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="D21/A7"/>
+<wire x1="365.76" y1="152.4" x2="378.46" y2="152.4" width="0.1524" layer="91"/>
+<label x="373.38" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HK_INST_THRM2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="D22/A8"/>
+<wire x1="365.76" y1="154.94" x2="378.46" y2="154.94" width="0.1524" layer="91"/>
+<label x="373.38" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HK_INST_THRM3" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="D23/A9"/>
+<wire x1="365.76" y1="157.48" x2="378.46" y2="157.48" width="0.1524" layer="91"/>
+<label x="373.38" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
