@@ -4194,7 +4194,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOUNT-PAD-ROUND" urn="urn:adsk.eagle:component:14303/1" prefix="H" library_version="1">
+<deviceset name="MOUNT-PAD-ROUND" urn="urn:adsk.eagle:component:14303/2" prefix="H" library_version="2">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt;, round</description>
 <gates>
 <gate name="G$1" symbol="MOUNT-PAD" x="0" y="0"/>
@@ -4208,7 +4208,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14281/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="6" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.0" package="3,0-PAD">
@@ -4219,7 +4221,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14280/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="17" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.2" package="3,2-PAD">
@@ -4230,7 +4234,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14282/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.3" package="3,3-PAD">
@@ -4241,7 +4247,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14283/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.6" package="3,6-PAD">
@@ -4252,7 +4260,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14284/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.1" package="4,1-PAD">
@@ -4263,7 +4273,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14285/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.3" package="4,3-PAD">
@@ -4274,7 +4286,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14286/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.5" package="4,5-PAD">
@@ -4285,7 +4299,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14287/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5.0" package="5,0-PAD">
@@ -4296,7 +4312,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14288/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5.5" package="5,5-PAD">
@@ -4307,7 +4325,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14291/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4358,6 +4378,62 @@ MELF 0.10 W</description>
 <connects>
 <connect gate="G$1" pin="P1" pad="1"/>
 <connect gate="G$1" pin="P2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="BatteryCR2032">
+<packages>
+<package name="CR2032">
+<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+<smd name="P$2" x="11.1" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+<smd name="P$3" x="-5" y="-1.1" dx="2.2" dy="1" layer="1" rot="R90"/>
+<smd name="P$4" x="16.1" y="-1.1" dx="2.2" dy="1" layer="1" rot="R90"/>
+<smd name="P$5" x="-5" y="-4.2" dx="2.2" dy="1" layer="1" rot="R90"/>
+<smd name="P$6" x="16.1" y="-4.2" dx="2.2" dy="1" layer="1" rot="R90"/>
+<wire x1="-5.408" y1="5.027" x2="16.792" y2="5.027" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="5" x2="-5.5" y2="-10.3" width="0.127" layer="21"/>
+<wire x1="16.8" y1="4.9" x2="16.8" y2="-10.4" width="0.127" layer="21"/>
+<wire x1="-5.467" y1="-10.387" x2="16.733" y2="-10.387" width="0.127" layer="21"/>
+<wire x1="11.303" y1="-4.064" x2="11.303" y2="-5.588" width="0.127" layer="21"/>
+<wire x1="10.541" y1="-4.826" x2="12.065" y2="-4.826" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-4.572" x2="0.889" y2="-4.572" width="0.127" layer="21"/>
+<text x="-1.27" y="-7.62" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CR2032">
+<pin name="P$1" x="0" y="0" visible="pad" length="middle" rot="R270"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-6.096" x2="1.524" y2="-6.096" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.858" x2="2.794" y2="-6.858" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-7.874" x2="1.778" y2="-7.874" width="0.254" layer="94"/>
+<pin name="P$2" x="0" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<pin name="P$3" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="P$4" x="12.7" y="-7.62" visible="pad" length="middle" rot="R180"/>
+<pin name="P$5" x="-12.7" y="-5.08" visible="pad" length="middle"/>
+<pin name="P$6" x="-12.7" y="-7.62" visible="pad" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CR2032">
+<gates>
+<gate name="G$1" symbol="CR2032" x="0" y="6.35"/>
+</gates>
+<devices>
+<device name="" package="CR2032">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$1"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4519,6 +4595,11 @@ MELF 0.10 W</description>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
+<part name="U$20" library="BatteryCR2032" deviceset="CR2032" device=""/>
+<part name="U$21" library="BatteryCR2032" deviceset="CR2032" device=""/>
+<part name="U$22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="SUPPLY22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
+<part name="SUPPLY27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5484,6 +5565,17 @@ AD797</text>
 <instance part="SUPPLY32" gate="G$1" x="45.72" y="165.1" smashed="yes">
 <attribute name="VALUE" x="43.053" y="161.925" size="1.778" layer="96"/>
 </instance>
+<instance part="U$20" gate="G$1" x="48.26" y="38.1" smashed="yes"/>
+<instance part="U$21" gate="G$1" x="91.44" y="38.1" smashed="yes"/>
+<instance part="U$22" gate="G$1" x="73.66" y="20.32" smashed="yes">
+<attribute name="VALUE" x="73.66" y="20.066" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY22" gate="1" x="48.26" y="17.78" smashed="yes">
+<attribute name="VALUE" x="48.26" y="17.526" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY27" gate="G$1" x="91.44" y="45.72" smashed="yes">
+<attribute name="VALUE" x="91.44" y="48.514" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5776,6 +5868,11 @@ AD797</text>
 <wire x1="322.58" y1="132.08" x2="332.74" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<wire x1="91.44" y1="38.1" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$21" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY27" gate="G$1" pin="5V"/>
+</segment>
 </net>
 <net name="AGND" class="0">
 <segment>
@@ -5825,6 +5922,17 @@ AD797</text>
 <pinref part="U1" gate="A" pin="MODE"/>
 <pinref part="U$18" gate="G$1" pin="AGND"/>
 <wire x1="236.22" y1="111.76" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$20" gate="G$1" pin="P$1"/>
+<wire x1="48.26" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$21" gate="G$1" pin="P$2"/>
+<wire x1="71.12" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="22.86" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$22" gate="G$1" pin="AGND"/>
+<junction x="73.66" y="22.86"/>
 </segment>
 </net>
 <net name="DGND" class="0">
@@ -6012,6 +6120,11 @@ AD797</text>
 <junction x="332.74" y="91.44"/>
 <wire x1="322.58" y1="91.44" x2="332.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U$20" gate="G$1" pin="P$2"/>
+<wire x1="48.26" y1="25.4" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY22" gate="1" pin="-5V"/>
 </segment>
 </net>
 <net name="N$22" class="0">
