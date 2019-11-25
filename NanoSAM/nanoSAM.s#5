@@ -4194,7 +4194,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOUNT-PAD-ROUND" urn="urn:adsk.eagle:component:14303/1" prefix="H" library_version="1">
+<deviceset name="MOUNT-PAD-ROUND" urn="urn:adsk.eagle:component:14303/2" prefix="H" library_version="2">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt;, round</description>
 <gates>
 <gate name="G$1" symbol="MOUNT-PAD" x="0" y="0"/>
@@ -4208,7 +4208,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14281/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="6" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.0" package="3,0-PAD">
@@ -4219,7 +4221,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14280/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="17" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.2" package="3,2-PAD">
@@ -4230,7 +4234,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14282/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.3" package="3,3-PAD">
@@ -4241,7 +4247,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14283/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.6" package="3,6-PAD">
@@ -4252,7 +4260,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14284/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.1" package="4,1-PAD">
@@ -4263,7 +4273,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14285/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.3" package="4,3-PAD">
@@ -4274,7 +4286,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14286/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.5" package="4,5-PAD">
@@ -4285,7 +4299,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14287/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5.0" package="5,0-PAD">
@@ -4296,7 +4312,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14288/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5.5" package="5,5-PAD">
@@ -4307,7 +4325,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14291/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4358,6 +4378,62 @@ MELF 0.10 W</description>
 <connects>
 <connect gate="G$1" pin="P1" pad="1"/>
 <connect gate="G$1" pin="P2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="BatteryCR2032">
+<packages>
+<package name="CR2032">
+<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+<smd name="P$2" x="11.1" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+<smd name="P$3" x="-5" y="-1.1" dx="2.2" dy="1" layer="1" rot="R90"/>
+<smd name="P$4" x="16.1" y="-1.1" dx="2.2" dy="1" layer="1" rot="R90"/>
+<smd name="P$5" x="-5" y="-4.2" dx="2.2" dy="1" layer="1" rot="R90"/>
+<smd name="P$6" x="16.1" y="-4.2" dx="2.2" dy="1" layer="1" rot="R90"/>
+<wire x1="-5.408" y1="5.027" x2="16.792" y2="5.027" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="5" x2="-5.5" y2="-10.3" width="0.127" layer="21"/>
+<wire x1="16.8" y1="4.9" x2="16.8" y2="-10.4" width="0.127" layer="21"/>
+<wire x1="-5.467" y1="-10.387" x2="16.733" y2="-10.387" width="0.127" layer="21"/>
+<wire x1="11.303" y1="-4.064" x2="11.303" y2="-5.588" width="0.127" layer="21"/>
+<wire x1="10.541" y1="-4.826" x2="12.065" y2="-4.826" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-4.572" x2="0.889" y2="-4.572" width="0.127" layer="21"/>
+<text x="-1.27" y="-7.62" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CR2032">
+<pin name="P$1" x="0" y="0" visible="pad" length="middle" rot="R270"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-6.096" x2="1.524" y2="-6.096" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.858" x2="2.794" y2="-6.858" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-7.874" x2="1.778" y2="-7.874" width="0.254" layer="94"/>
+<pin name="P$2" x="0" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<pin name="P$3" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="P$4" x="12.7" y="-7.62" visible="pad" length="middle" rot="R180"/>
+<pin name="P$5" x="-12.7" y="-5.08" visible="pad" length="middle"/>
+<pin name="P$6" x="-12.7" y="-7.62" visible="pad" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CR2032">
+<gates>
+<gate name="G$1" symbol="CR2032" x="0" y="6.35"/>
+</gates>
+<devices>
+<device name="" package="CR2032">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$1"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4445,7 +4521,7 @@ MELF 0.10 W</description>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
 <part name="SUPPLY5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
-<part name="R25" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="DNP"/>
+<part name="R25" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="1M"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
@@ -4519,6 +4595,13 @@ MELF 0.10 W</description>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="DGND" device=""/>
+<part name="U$20" library="BatteryCR2032" deviceset="CR2032" device=""/>
+<part name="U$21" library="BatteryCR2032" deviceset="CR2032" device=""/>
+<part name="U$22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="SUPPLY22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
+<part name="SUPPLY27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="-1206-16V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF"/>
+<part name="U$23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4543,8 +4626,7 @@ MELF 0.10 W</description>
 3) Uses 16bit Sigma-Delta ADC with SPI output for analog to digital conversion
 4) Optional R25 feedback resistor - use in place of IC3</text>
 <text x="299.72" y="86.36" size="2.54" layer="97">1) Teensy 4.0
-2) Requires 1 SPI bus
-3) Requires 1 I2C bus
+2) SPI bus for ADC and flash
 4) Analog inputs used for housekeeping signals</text>
 <text x="299.72" y="-17.78" size="2.54" layer="97">1) 128Mbit minimum
 2) 2 chips for redundancy
@@ -5098,14 +5180,14 @@ AD797</text>
 </sheet>
 <sheet>
 <plain>
-<wire x1="152.4" y1="266.7" x2="152.4" y2="160.02" width="0.1524" layer="97"/>
-<wire x1="152.4" y1="160.02" x2="360.68" y2="160.02" width="0.1524" layer="97"/>
-<wire x1="360.68" y1="160.02" x2="360.68" y2="266.7" width="0.1524" layer="97"/>
+<wire x1="152.4" y1="266.7" x2="152.4" y2="156.464" width="0.1524" layer="97"/>
+<wire x1="152.4" y1="156.464" x2="360.68" y2="156.464" width="0.1524" layer="97"/>
+<wire x1="360.68" y1="156.464" x2="360.68" y2="266.7" width="0.1524" layer="97"/>
 <wire x1="360.68" y1="266.7" x2="152.4" y2="266.7" width="0.1524" layer="97"/>
 <text x="154.94" y="170.18" size="2.54" layer="97">Digital 3.3V Power supply</text>
-<wire x1="152.4" y1="152.4" x2="152.4" y2="33.02" width="0.1524" layer="97"/>
-<wire x1="152.4" y1="33.02" x2="363.22" y2="33.02" width="0.1524" layer="97"/>
-<wire x1="363.22" y1="33.02" x2="363.22" y2="152.4" width="0.1524" layer="97"/>
+<wire x1="152.4" y1="152.4" x2="152.4" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="152.4" y1="30.48" x2="363.22" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="363.22" y1="30.48" x2="363.22" y2="152.4" width="0.1524" layer="97"/>
 <wire x1="363.22" y1="152.4" x2="152.4" y2="152.4" width="0.1524" layer="97"/>
 <text x="154.94" y="48.26" size="2.54" layer="97">Analog +-5V Power supply</text>
 <wire x1="17.78" y1="266.7" x2="17.78" y2="213.36" width="0.1524" layer="97"/>
@@ -5119,11 +5201,13 @@ AD797</text>
 <wire x1="91.44" y1="144.78" x2="91.44" y2="195.58" width="0.1524" layer="97"/>
 <wire x1="91.44" y1="195.58" x2="17.78" y2="195.58" width="0.1524" layer="97"/>
 <text x="20.32" y="147.32" size="2.54" layer="97">Mounting Holes</text>
-<text x="154.94" y="35.56" size="2.54" layer="97">1) R20 sets switching frequency
+<text x="154.94" y="33.02" size="2.54" layer="97">1) R20 sets switching frequency
 2) Provides power for analog components
-3) Maximum 50mA per linearly regulated output channel</text>
-<text x="154.94" y="162.56" size="2.54" layer="97">1) Provides 3.3V power for digital components.
-2) Maximum 2.5A output</text>
+3) Maximum 50mA per linearly regulated output channel
+4) LT1605 Current monitor</text>
+<text x="154.686" y="158.75" size="2.54" layer="97">1) Provides 3.3V power for digital components.
+2) Maximum 2.5A output
+3) LT6105 Current monitor</text>
 <wire x1="12.7" y1="60.96" x2="12.7" y2="142.24" width="0.1524" layer="97"/>
 <wire x1="12.7" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="97"/>
 <wire x1="106.68" y1="142.24" x2="106.68" y2="60.96" width="0.1524" layer="97"/>
@@ -5131,6 +5215,15 @@ AD797</text>
 <text x="15.24" y="68.58" size="2.54" layer="97">Board and instrument temperature monitoring</text>
 <text x="15.24" y="63.5" size="1.778" layer="97">1 board thermistor
 4 instrument thermistor connections</text>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="12.7" y1="2.54" x2="134.62" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="134.62" y1="2.54" x2="134.62" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="134.62" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="12.7" y1="53.34" x2="12.7" y2="12.7" width="0.1524" layer="97"/>
+<text x="15.24" y="12.7" size="2.54" layer="97">Backup battery holders</text>
+<text x="14.986" y="4.318" size="1.778" layer="97">1) two 3V CR2032 batteries each
+2) These will not be populated unless
+ LT3260 proves too noisy</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -5479,6 +5572,24 @@ AD797</text>
 <instance part="SUPPLY32" gate="G$1" x="45.72" y="165.1" smashed="yes">
 <attribute name="VALUE" x="43.053" y="161.925" size="1.778" layer="96"/>
 </instance>
+<instance part="U$20" gate="G$1" x="48.26" y="38.1" smashed="yes"/>
+<instance part="U$21" gate="G$1" x="91.44" y="38.1" smashed="yes"/>
+<instance part="U$22" gate="G$1" x="73.66" y="20.32" smashed="yes">
+<attribute name="VALUE" x="73.66" y="20.066" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY22" gate="1" x="48.26" y="17.78" smashed="yes">
+<attribute name="VALUE" x="48.26" y="17.526" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY27" gate="G$1" x="91.44" y="45.72" smashed="yes">
+<attribute name="VALUE" x="91.44" y="48.514" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C4" gate="G$1" x="215.9" y="119.38" smashed="yes">
+<attribute name="NAME" x="217.424" y="122.301" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="217.424" y="117.221" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="U$23" gate="G$1" x="215.9" y="111.76" smashed="yes">
+<attribute name="VALUE" x="215.9" y="111.506" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5708,8 +5819,9 @@ AD797</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="U1" gate="A" pin="VIN"/>
-<wire x1="205.74" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="127" x2="215.9" y2="127" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="EN+"/>
+<wire x1="215.9" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="127" x2="236.22" y2="127" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="127" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="121.92" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
@@ -5721,6 +5833,9 @@ AD797</text>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="127" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
 <junction x="205.74" y="127"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="124.46" x2="215.9" y2="127" width="0.1524" layer="91"/>
+<junction x="215.9" y="127"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -5771,6 +5886,11 @@ AD797</text>
 <wire x1="322.58" y1="132.08" x2="332.74" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<wire x1="91.44" y1="38.1" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$21" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY27" gate="G$1" pin="5V"/>
+</segment>
 </net>
 <net name="AGND" class="0">
 <segment>
@@ -5820,6 +5940,22 @@ AD797</text>
 <pinref part="U1" gate="A" pin="MODE"/>
 <pinref part="U$18" gate="G$1" pin="AGND"/>
 <wire x1="236.22" y1="111.76" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$20" gate="G$1" pin="P$1"/>
+<wire x1="48.26" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$21" gate="G$1" pin="P$2"/>
+<wire x1="71.12" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="22.86" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$22" gate="G$1" pin="AGND"/>
+<junction x="73.66" y="22.86"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="U$23" gate="G$1" pin="AGND"/>
+<wire x1="215.9" y1="116.84" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DGND" class="0">
@@ -6007,6 +6143,11 @@ AD797</text>
 <junction x="332.74" y="91.44"/>
 <wire x1="322.58" y1="91.44" x2="332.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U$20" gate="G$1" pin="P$2"/>
+<wire x1="48.26" y1="25.4" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY22" gate="1" pin="-5V"/>
 </segment>
 </net>
 <net name="N$22" class="0">
