@@ -28,11 +28,11 @@ R_fb = (V_Ref*Margin)./I_D; %Ohm
 V_sig = R_fb.*I_D; %1V
 
 % Calculate shot noise (?)
-photon_rate = Power_d./Ep;
-shot_rate = sqrt(photon_rate);
-shot_power = shot_rate.*Ep;
-I_shot = shot_power.*R;
-VN_shot= I_shot.*R_fb;
+photon_rate = Power_d./Ep; % photons/s
+shot_rate = sqrt(photon_rate); % photons/s
+shot_power = shot_rate.*Ep; % W
+I_shot = shot_power.*R; % A
+VN_shot= I_shot.*R_fb; % V
 
 % Calculate Dark noise
 I_dark = 10e-12; % A
