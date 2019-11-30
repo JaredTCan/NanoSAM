@@ -16,6 +16,8 @@ Power = Phi*BW*Aap;
 Power_a = fraction*Power;
 mirrorref = .9;
 Power_d = Power_a*mirrorref;
+ec = 1.60218e-19;  % Elementary charge, C/electron
+
 
 % Calculate photodiode current
 R = [0.4,0.33];  % Responsivity, A/W
@@ -36,7 +38,12 @@ VN_shot= I_shot.*R_fb; % V
 
 % Calculate Dark noise
 I_dark = 10e-12; % A
-VN_dark = I_dark.*R_fb; % V
+eq_power = I_dark./R;
+eq_photon = eq_power./Ep;
+N_eq_photon = sqrt(eq_photon);
+N_eq_power = N_eq_photon.*Ep;
+IN_dark = N_eq_power.*R;
+VN_dark = IN_dark .* R_fb;
 
 % Quantization Noise
 bits = 16;
