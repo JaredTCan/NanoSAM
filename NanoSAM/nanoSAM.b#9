@@ -1505,11 +1505,11 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value=" " x="77.7" y="82" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="80.557" y="82" size="1.778" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="U$20" library="BatteryCR2032" package="CR2032" value="CR2032" x="-16" y="-6" smashed="yes">
-<attribute name="NAME" x="-17.27" y="-13.62" size="1.27" layer="25"/>
+<element name="U$20" library="BatteryCR2032" package="CR2032" value="CR2032" x="12" y="50" smashed="yes" rot="MR90">
+<attribute name="NAME" x="4.38" y="48.73" size="1.27" layer="26" rot="MR90"/>
 </element>
-<element name="U$21" library="BatteryCR2032" package="CR2032" value="CR2032" x="-16" y="-22" smashed="yes">
-<attribute name="NAME" x="-17.27" y="-29.62" size="1.27" layer="25"/>
+<element name="U$21" library="BatteryCR2032" package="CR2032" value="CR2032" x="12" y="27" smashed="yes" rot="MR90">
+<attribute name="NAME" x="4.38" y="25.73" size="1.27" layer="26" rot="MR90"/>
 </element>
 </elements>
 <signals>
@@ -1668,7 +1668,7 @@ design rules under a new name.</description>
 <wire x1="18" y1="69" x2="18" y2="69.675" width="0.508" layer="1"/>
 <wire x1="18" y1="69.675" x2="17.815" y2="69.86" width="0.508" layer="1"/>
 <contactref element="U$21" pad="P$2"/>
-<wire x1="-4.9" y1="-22" x2="8.59" y2="19.81" width="0" layer="19" extent="1-1"/>
+<wire x1="8.59" y1="19.81" x2="12" y2="38.1" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="AGND">
 <contactref element="U$3" pad="3"/>
@@ -1775,8 +1775,8 @@ design rules under a new name.</description>
 <wire x1="10.3" y1="11.5" x2="11.2" y2="11.5" width="0" layer="19" extent="1-1"/>
 <wire x1="9.4" y1="11.5" x2="10.3" y2="11.5" width="0" layer="19" extent="1-1"/>
 <wire x1="10.26" y1="12.86" x2="10.3" y2="11.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.9" y1="-6" x2="9.4" y2="11.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-16" y1="-22" x2="-4.9" y2="-6" width="0" layer="19" extent="1-1"/>
+<wire x1="12" y1="61.1" x2="9.4" y2="11.5" width="0" layer="19" extent="16-16"/>
+<wire x1="12" y1="27" x2="12" y2="61.1" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DGND">
 <contactref element="C3" pad="2"/>
@@ -2310,16 +2310,15 @@ design rules under a new name.</description>
 <wire x1="26.59" y1="20.5" x2="26.59" y2="25.41" width="0.508" layer="1"/>
 <wire x1="24.39" y1="27.61" x2="19.55" y2="27.61" width="0.508" layer="1"/>
 <wire x1="26.59" y1="25.41" x2="24.39" y2="27.61" width="0.508" layer="1"/>
-<wire x1="19.55" y1="27.61" x2="13" y2="34.16" width="0.508" layer="16"/>
-<wire x1="13" y1="79" x2="13" y2="34.16" width="0.508" layer="16"/>
+<wire x1="15.23" y1="79.73" x2="20.3" y2="74.66" width="0.508" layer="16"/>
+<wire x1="19.55" y1="27.61" x2="20.3" y2="28.36" width="0.508" layer="16"/>
+<wire x1="20.3" y1="74.66" x2="20.3" y2="28.36" width="0.508" layer="16"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$3" pad="4"/>
 <wire x1="15.275" y1="75.06" x2="15.23" y2="75.105" width="0.2" layer="1"/>
-<wire x1="15.23" y1="79.73" x2="13.73" y2="79.73" width="0.508" layer="16"/>
-<wire x1="13.73" y1="79.73" x2="13" y2="79" width="0.508" layer="16"/>
 <wire x1="15.23" y1="75.105" x2="15.23" y2="79.73" width="0.508" layer="1"/>
 <contactref element="U$20" pad="P$1"/>
-<wire x1="-16" y1="-6" x2="19.55" y2="27.61" width="0" layer="19" extent="1-1"/>
+<wire x1="12" y1="50" x2="19.55" y2="27.61" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$22">
 <contactref element="C9" pad="1"/>

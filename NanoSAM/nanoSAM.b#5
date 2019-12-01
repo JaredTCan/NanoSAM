@@ -1758,45 +1758,14 @@ design rules under a new name.</description>
 <via x="12" y="32" extent="1-16" drill="0.35"/>
 <polygon width="0.254" layer="2">
 <vertex x="32" y="17"/>
-<vertex x="32" y="9"/>
-<vertex x="37" y="9"/>
-<vertex x="37" y="17"/>
+<vertex x="32" y="15"/>
+<vertex x="36.8" y="15"/>
+<vertex x="36.8" y="17"/>
 </polygon>
 <via x="12" y="55" extent="1-16" drill="0.35"/>
 <wire x1="12" y1="61.1" x2="12" y2="55" width="0.508" layer="16"/>
 <wire x1="12" y1="32" x2="12" y2="27" width="0.508" layer="16"/>
 <contactref element="C4" pad="2"/>
-<wire x1="29" y1="68.3" x2="32" y2="69.8" width="0" layer="19" extent="1-1"/>
-<wire x1="19.2" y1="68.1" x2="29" y2="68.3" width="0" layer="19" extent="1-1"/>
-<wire x1="15.3" y1="68.1" x2="19.085" y2="68.215" width="0" layer="19" extent="1-1"/>
-<wire x1="19.085" y1="75.06" x2="19.085" y2="69.86" width="0" layer="19" extent="1-1"/>
-<wire x1="16.545" y1="76.855" x2="19.085" y2="76.785" width="0" layer="19" extent="1-1"/>
-<wire x1="12" y1="61.1" x2="15.275" y2="68.125" width="0" layer="19" extent="1-16"/>
-<wire x1="15.74" y1="34.61" x2="12" y2="55" width="0" layer="19" extent="1-1"/>
-<wire x1="12" y1="32" x2="15.74" y2="34.61" width="0" layer="19" extent="1-1"/>
-<wire x1="12.1" y1="24.6" x2="12" y2="27" width="0" layer="19" extent="16-16"/>
-<wire x1="13.1" y1="24.6" x2="12.1" y2="24.6" width="0" layer="19" extent="1-1"/>
-<wire x1="14.1" y1="24.6" x2="13.1" y2="24.6" width="0" layer="19" extent="1-1"/>
-<wire x1="16.2256" y1="19.91133125" x2="14.1" y2="24.6" width="0" layer="19" extent="1-1"/>
-<wire x1="20.5944" y1="19.91133125" x2="18.41" y2="18.59" width="0" layer="19" extent="1-1"/>
-<wire x1="17.3" y1="14.36" x2="17.65943125" y2="17.40943125" width="0" layer="19" extent="1-1"/>
-<wire x1="20.7" y1="13.29" x2="17.3" y2="14.36" width="0" layer="19" extent="1-1"/>
-<wire x1="22.84" y1="12.82" x2="20.7" y2="13.29" width="0" layer="19" extent="1-1"/>
-<wire x1="22.8" y1="11.3" x2="22.84" y2="12.82" width="0" layer="19" extent="1-1"/>
-<wire x1="23.8" y1="11.3" x2="22.8" y2="11.3" width="0" layer="19" extent="1-1"/>
-<wire x1="21.8" y1="11.3" x2="22.8" y2="11.3" width="0" layer="19" extent="1-1"/>
-<wire x1="24.9" y1="13.41" x2="22.84" y2="12.82" width="0" layer="19" extent="1-1"/>
-<wire x1="28.66" y1="13.24" x2="24.9" y2="13.41" width="0" layer="19" extent="1-1"/>
-<wire x1="23.24" y1="22.98" x2="20.5944" y2="19.91133125" width="0" layer="19" extent="1-1"/>
-<wire x1="23.1" y1="24.6" x2="23.24" y2="22.98" width="0" layer="19" extent="1-1"/>
-<wire x1="24.1" y1="24.6" x2="23.1" y2="24.6" width="0" layer="19" extent="1-1"/>
-<wire x1="22.1" y1="24.6" x2="23.1" y2="24.6" width="0" layer="19" extent="1-1"/>
-<wire x1="12.49" y1="12.83" x2="17.3" y2="14.36" width="0" layer="19" extent="1-1"/>
-<wire x1="11.2" y1="11.5" x2="12.49" y2="12.83" width="0" layer="19" extent="1-1"/>
-<wire x1="10.3" y1="11.5" x2="11.2" y2="11.5" width="0" layer="19" extent="1-1"/>
-<wire x1="9.4" y1="11.5" x2="10.3" y2="11.5" width="0" layer="19" extent="1-1"/>
-<wire x1="10.26" y1="12.86" x2="10.3" y2="11.5" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="22.9" x2="9.4" y2="11.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND">
 <contactref element="C3" pad="2"/>
@@ -2262,7 +2231,6 @@ design rules under a new name.</description>
 <wire x1="6" y1="12.2274" x2="4" y2="14.2274" width="0.508" layer="1"/>
 <wire x1="13.38285625" y1="20.7664" x2="7.9216625" y2="20.7664" width="0.508" layer="16"/>
 <wire x1="13.38285625" y1="20.7664" x2="14.074628125" y2="20.074628125" width="0.508" layer="1"/>
-<wire x1="14.074628125" y1="20.074628125" x2="15.2056625" y2="18.94359375" width="0.508" layer="1"/>
 <wire x1="16.14431875" y1="18.99185" x2="16.2256" y2="18.91056875" width="0.254" layer="1"/>
 <wire x1="14.074628125" y1="20.074628125" x2="14.254234375" y2="20.074628125" width="0.254" layer="1"/>
 <wire x1="14.254234375" y1="20.074628125" x2="15.3370125" y2="18.99185" width="0.254" layer="1"/>
@@ -2547,6 +2515,9 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="20,2,452634d7d2af55ae"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
