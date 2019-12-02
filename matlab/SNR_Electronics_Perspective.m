@@ -10,7 +10,7 @@ ap_arcmin = 1;    % Aperture, arcmin
 solardisk_avg_arcmin = 31.99; % solar disk, arcmin
 fraction =(ap_arcmin/solardisk_avg_arcmin)^2;
 Phi = [709.75,698]*10^(-3); % W/(m^2*nm)
-BW = 40; % bandwidth, nm %CHECK
+BW = 10; % bandwidth, nm %CHECK
 Aap = 1e-4; % Aperture area, m^2
 Power = Phi*BW*Aap;
 Power_a = fraction*Power;
@@ -36,19 +36,21 @@ shot_power = shot_rate.*Ep; % W
 I_shot = shot_power.*R; % A
 VN_shot= I_shot.*R_fb; % V
 
-% Calculate Dark noise
-I_dark = 10e-12; % A
-eq_power = I_dark./R;
-eq_photon = eq_power./Ep;
-N_eq_photon = sqrt(eq_photon);
-N_eq_power = N_eq_photon.*Ep;
-IN_dark = N_eq_power.*R;
-VN_dark = IN_dark .* R_fb;
-
 % Quantization Noise
 bits = 16;
 LSB = V_Ref/2^bits; % Volts
 VN_quan = LSB/sqrt(12); % Saw wave RMS - assumes constant increase or decrease of signal
+
+% Calculate Dark noise
+I_dark = 10e-12; % A
+V_dark = I_dark*R_fb;
+Bin_Dark = V_dark/LSB;
+eq_power = I_dark./R; % W
+eq_photon = eq_power./Ep; % particles / s
+N_eq_photon = sqrt(eq_photon); % particles / s
+N_eq_power = N_eq_photon.*Ep; % W
+IN_dark = N_eq_power.*R; % A 
+VN_dark = IN_dark .* R_fb; % V
 
 % Power Supply Noise
 VnoisePS = 100e-6; % V
