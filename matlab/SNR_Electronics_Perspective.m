@@ -66,6 +66,10 @@ VN_trans = VF_trans.*(1 + R_fb./R_Shunt).*sqrt(Bandwidth);
 % Signal to Noise Ratio
 SNR = (sqrt(numSamples)).* V_sig./sqrt(VN_shot.^2 + VN_dark.^2 + VN_quan.^2 + VN_PS.^2 + VN_trans.^2)
 
+%Required bias voltage
+R_series = 50;
+V_bias = I_D*R_series;
+
 
 
 
