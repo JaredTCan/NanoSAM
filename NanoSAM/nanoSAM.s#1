@@ -4809,7 +4809,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
 <part name="U$31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
 <part name="U$32" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
-<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="0"/>
+<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="DNP"/>
 <part name="U$33" library="LT6654" deviceset="LT6654-3.3" device=""/>
 <part name="SUPPLY39" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="C32" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
@@ -4831,10 +4831,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="20.32" y1="-50.8" x2="284.48" y2="-50.8" width="0.1524" layer="97"/>
 <wire x1="284.48" y1="-50.8" x2="284.48" y2="205.74" width="0.1524" layer="97"/>
 <wire x1="284.48" y1="205.74" x2="20.32" y2="205.74" width="0.1524" layer="97"/>
-<wire x1="297.18" y1="208.28" x2="297.18" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="297.18" y1="205.74" x2="297.18" y2="83.82" width="0.1524" layer="97"/>
 <wire x1="297.18" y1="83.82" x2="396.24" y2="83.82" width="0.1524" layer="97"/>
-<wire x1="396.24" y1="83.82" x2="396.24" y2="208.28" width="0.1524" layer="97"/>
-<wire x1="396.24" y1="208.28" x2="297.18" y2="208.28" width="0.1524" layer="97"/>
+<wire x1="396.24" y1="83.82" x2="396.24" y2="205.74" width="0.1524" layer="97"/>
+<wire x1="396.24" y1="205.74" x2="297.18" y2="205.74" width="0.1524" layer="97"/>
 <wire x1="297.18" y1="76.2" x2="297.18" y2="-20.32" width="0.1524" layer="97"/>
 <wire x1="297.18" y1="-20.32" x2="396.24" y2="-20.32" width="0.1524" layer="97"/>
 <wire x1="396.24" y1="-20.32" x2="396.24" y2="76.2" width="0.1524" layer="97"/>
