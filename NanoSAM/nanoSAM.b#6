@@ -1870,15 +1870,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI_SCK">
 <contactref element="U$5" pad="P5"/>
-<wire x1="57.7" y1="38.7" x2="48.7" y2="38.7" width="0.254" layer="1"/>
-<wire x1="70" y1="51" x2="57.7" y2="38.7" width="0.254" layer="1"/>
-<wire x1="69" y1="74" x2="70" y2="73" width="0.254" layer="1"/>
-<wire x1="37" y1="74" x2="36.1" y2="73.1" width="0.254" layer="1"/>
-<wire x1="37.04" y1="71.75" x2="36.8726" y2="71.9174" width="0.254" layer="1"/>
-<wire x1="36.51786875" y1="71.9174" x2="36.8726" y2="71.9174" width="0.254" layer="1"/>
-<wire x1="36.51786875" y1="71.9174" x2="36.1" y2="72.33526875" width="0.254" layer="1"/>
-<wire x1="36.1" y1="72.33526875" x2="36.1" y2="73.1" width="0.254" layer="1"/>
-<wire x1="69" y1="74" x2="37" y2="74" width="0.254" layer="1"/>
+<wire x1="57.8266" y1="47.8266" x2="48.7" y2="38.7" width="0.254" layer="1"/>
 <contactref element="U$16" pad="6"/>
 <contactref element="U$17" pad="6"/>
 <contactref element="U$26" pad="P5"/>
@@ -1893,13 +1885,23 @@ design rules under a new name.</description>
 <wire x1="48.697565625" y1="38.902434375" x2="48.7" y2="38.9" width="0.254" layer="1"/>
 <wire x1="61.07" y1="70.655" x2="61.7606" y2="69.9644" width="0.254" layer="1"/>
 <wire x1="61.7606" y1="69.9644" x2="62.28573125" y2="69.9644" width="0.254" layer="1"/>
-<wire x1="62" y1="62.91986875" x2="62" y2="62" width="0.254" layer="1"/>
 <wire x1="62.5894" y1="63.50926875" x2="62" y2="62.91986875" width="0.254" layer="1"/>
 <wire x1="62.28573125" y1="69.9644" x2="62.5894" y2="69.66073125" width="0.254" layer="1"/>
 <wire x1="62.5894" y1="69.66073125" x2="62.5894" y2="63.50926875" width="0.254" layer="1"/>
-<wire x1="62" y1="62" x2="61.21" y2="62.655" width="0" layer="19" extent="1-1"/>
-<wire x1="70" y1="73" x2="61.07" y2="70.655" width="0" layer="19" extent="1-1"/>
-<wire x1="70" y1="51" x2="62" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="62" y1="62.39013125" x2="62" y2="62.91986875" width="0.254" layer="1"/>
+<wire x1="62.5894" y1="61.80073125" x2="62" y2="62.39013125" width="0.254" layer="1"/>
+<wire x1="57.8266" y1="54.93646875" x2="62.5894" y2="59.69926875" width="0.254" layer="1"/>
+<wire x1="62.5894" y1="59.69926875" x2="62.5894" y2="61.80073125" width="0.254" layer="1"/>
+<wire x1="57.8266" y1="47.8266" x2="57.8266" y2="54.93646875" width="0.254" layer="1"/>
+<wire x1="37.04" y1="71.75" x2="35.75" y2="71.75" width="0.254" layer="1"/>
+<wire x1="35.75" y1="71.75" x2="35.6" y2="71.9" width="0.254" layer="1"/>
+<via x="35.6" y="71.9" extent="1-16" drill="0.35"/>
+<wire x1="35.6" y1="71.9" x2="35.6" y2="56.6" width="0.254" layer="16"/>
+<wire x1="35.6" y1="56.6" x2="33" y2="54" width="0.254" layer="16"/>
+<via x="33" y="54" extent="1-16" drill="0.35"/>
+<wire x1="33" y1="54" x2="33.87" y2="54" width="0.254" layer="1"/>
+<wire x1="33.87" y1="54" x2="34" y2="53.87" width="0.254" layer="1"/>
+<wire x1="61.07" y1="70.655" x2="61.21" y2="62.655" width="0" layer="19" extent="1-1"/>
 <wire x1="48.7" y1="38.9" x2="48.7" y2="38.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_MOSI">
