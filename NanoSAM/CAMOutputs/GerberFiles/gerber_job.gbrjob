@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-01-23T20:52:09Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.99,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "nanoSAM"
+        },
+        "Owner": "Jared Cantilina <jared.cantilina@colorado.edu>",
+        "Size": {
+            "X": 89.6,
+            "Y": 94
+        }
+    }
+}
