@@ -1,0 +1,95 @@
+Software Driver ReadMe File for:
+
+Release history:
+-Release Version 1.8 (June 2017)
+ 	MT25Q.c 
+			Added Die erase function.
+
+-Release Version 1.7 (June 2016)
+ 	MT25Q.c 
+			Fixed FlashWriteEnable() variable num_of_try not initialed BUG.
+		
+-Release Version 1.6 (September 2015)
+
+  MT25Q.c v1.6
+  MT25Q.h v1.6
+      Modify some unreasonable comments of functions.
+
+-Release Version 1.5 (March 2014)
+
+  MT25Q.c v1.5
+      Changed FlashPemanentProtectionBitRead() to use 4bytes address
+      Changed FlashPemanentProtectionBitErase() to use 4bytes address
+
+- Release Version 1.4 (13 November 2013)
+
+  MT25Q.h   v1.4
+  MT25Q.c   v1.4
+	Driver_Init() reads Discovery Parameter Table to determine
+	device geometry.
+
+	Replaced SPI_SR1_WEL (located in Serialize.h) with SPI_FLASH_WEL,
+	located in MT25Q.h.
+  Serialize.h
+  Serialize.c
+
+- Release Version 1.3 (04 September 2013)
+
+  MT25Q.h   v1.3
+  MT25Q.c   v1.3
+	Removed "NMX_" prefix from all type definitions.
+
+  Serialize.c
+  Serialize.h
+	Added to release package.
+
+- Release Version 1.2 (27 August 2013)
+
+  MT25Q.h   v1.2
+  MT25Q.c   v1.2
+        Enhanced error checking.
+	Tested Suspend and Resume.
+	Removed Die Erase (not supported on device).
+
+- Release Version 1.1 (June 2013)
+
+	Added the following functions:
+	
+	- FlashReadExtAddrReg()
+	- FlashWriteExtAddrReg()
+	- FlashEnterDeepPowerDown()
+	- FlashReleaseDeepPowerDown()
+	- FlashReadAdvancedSecProt()
+	- FlashProgramAdvancedSecProt()
+	- FlashPasswordRead()
+	- FlashPasswordProgram()
+	- FlashPasswordUnlock()
+	- FlashPermanentProtectionBitRead()
+	- FlashPermanentProtectionBitProgram()
+	- FlashPermanentProtectionBitErase()
+	- FlashWriteGlobalFreezeBit()
+	- FlashReadGlobalFreezeBit()
+	- FlashOTPProgram()
+	- FlashOTPRead()
+	
+	Warning: this functions are provided in beta
+ 
+  N25Q.h  v1.1
+  N25Q.c  v1.1
+
+- Release Version 1.0 (February 2013)
+
+  Full alpha version
+ 
+  N25Q.h  v1.0
+  N25Q.c  v1.0
+ 
+- Release Version 0.1 (January 2013)
+
+  Alpha version with a subset of commands implemented
+ 
+  N25Q.h  v0.1
+  N25Q.c  v0.1
+ 
+ 
+Note: Added support for N25Q256A8. The driver supports both standard N25Q and new N25Q256A8X command set.
