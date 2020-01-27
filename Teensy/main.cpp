@@ -4,13 +4,16 @@
 #include <SPI.h>
 
 void setup() {
-  // put your setup code here, to run once:
-  // Initialize variables (data integers, etc)
-      // Photodiode threshold voltage - *Sun-scanning control*
-      double threshold = 1.435; //volts  // int/double threshold_voltage - from testing with photodiode
-      // Photodiode input voltage - *input*
-      double input_voltage = 3.30; //volts //double - required input voltage for photodiode  
-      // Packetized data (?) - *Data Transmission*
+// put your setup code here, to run once:
+// Initialize variables (data integers, etc)
+  // Photodiode threshold voltage
+    double threshold = 1.435; //volts  // int/double threshold_voltage - from testing with photodiode
+  // Photodiode input voltage - *input*
+    double input_voltage = 3.30; //volts //double - required input voltage for photodiode  
+  // Measured photodiode voltage (should be in binary - int variable?)
+    int photodiode;
+  // Packetized data (?) - *Data Transmission*
+    int data_out;
   // Initialize pin modes (digital, analog, Tx, Rx, etc)
 
   SPI.begin();
@@ -23,32 +26,24 @@ void setup() {
 }
 
 void loop() {
-// put your main code here, to run repeatedly:
-boolean dataCapture = true;
-while (dataCapture)
-{
-// SUN-THRESHOLD MEASUREMENT
-  // If photodiode voltage > threshold
-    // do nothing (keep taking data)
-    // remain pinMode(~,input)
-  // else
-    // stop taking data - break loop
-    // dataCapture = false;
- 
-// SCIENCE DATA STORAGE (which pin inputs/outputs this data?)
-    // take variable for digital data from ADC
-    digitalWrite(10,LOW);
+boolean dataCapture = true; //setting condition to continue taking data until threshold is reached
+while (dataCapture){ //will run until dataCapture is false
+photodiode = digitalWrite(10,LOW); //reading digital data incoming in pin 10 and storing it in variable "photodiode"
 
-    // write to NOR flash chips (??????)
-    SPI.beginTransaction(SPISettings(1000000,MSBFIRST,SPI_MODE3)); //SPISettings(maxSpeed,dataOrder,dataMode)
-    digitalWrite(8,LOW); // set Slave Select pin 8 to low to select chip
-    SPI.transfer(data); //write data to chip
-    digitalWrite(8,HIGH); // set Slave Select pin 8 to high to de-select chip
-    SPI.endTransaction();
+if (photodiode <= threshold); //if photodiode voltage is less than or equal to threshold then set dataCapture to false (ends while loop)
+  dataCapture = false;
+
+// SCIENCE DATA STORAGE
+// write to NOR flash chips via SPI
+SPI.beginTransaction(SPISettings(8000000,MSBFIRST,SPI_MODE3)); //SPISettings(maxSpeed,dataOrder,dataMode)
+digitalWrite(8,LOW); // set Slave Select pin 8 to low to select chip
+SPI.transfer(photodiode); //write data to chip
+digitalWrite(8,HIGH); // set Slave Select pin 8 to high to de-select chip
+SPI.endTransaction();
 
 // DATA TRANSMISSION
     // Take stored data from NOR flash memory
-    
+  // Serial.print()
     // packetize data for transmission (???????)
     // Serial data output to laptop
 }
