@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -110,8 +110,8 @@
 <connects>
 <connect gate="G$1" pin="COMP" pad="P2"/>
 <connect gate="G$1" pin="CS" pad="P3"/>
-<connect gate="G$1" pin="GND" pad="P10"/>
-<connect gate="G$1" pin="GND2" pad="P4 P11 P12"/>
+<connect gate="G$1" pin="GND" pad="P11"/>
+<connect gate="G$1" pin="GND2" pad="P4 P10 P12"/>
 <connect gate="G$1" pin="IN+" pad="P9"/>
 <connect gate="G$1" pin="REF-" pad="P8"/>
 <connect gate="G$1" pin="REFOUT" pad="P1"/>

@@ -1646,13 +1646,13 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <connect gate="G$1" pin="COMP" pad="P2"/>
 <connect gate="G$1" pin="CS" pad="P3"/>
 <connect gate="G$1" pin="GND" pad="P10"/>
-<connect gate="G$1" pin="GND2" pad="P4 P11 P12"/>
+<connect gate="G$1" pin="GND2" pad="P4 P7 P11"/>
 <connect gate="G$1" pin="IN+" pad="P9"/>
 <connect gate="G$1" pin="REF-" pad="P8"/>
 <connect gate="G$1" pin="REFOUT" pad="P1"/>
 <connect gate="G$1" pin="SCK" pad="P5"/>
 <connect gate="G$1" pin="SDO" pad="P6"/>
-<connect gate="G$1" pin="VCC" pad="P7"/>
+<connect gate="G$1" pin="VCC" pad="P12"/>
 </connects>
 <technologies>
 <technology name=""/>
