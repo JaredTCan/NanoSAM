@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,8 +22,8 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1265,7 +1265,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-08604" x="11.4" y="-36.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="70.328" y="12.83" size="1.778" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="C24" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF" x="61.61" y="13.24" smashed="yes" rot="R270">
+<element name="C24" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF - 25V" x="61.61" y="13.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.553" y="13.24" size="1.778" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-10300" x="7" y="-2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="60.467" y="13.24" size="1.778" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
@@ -1352,12 +1352,12 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value=" " x="2.3" y="69.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="28.97" y="6.562" size="1.778" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" " x="53.92" y="34.5" smashed="yes">
+<element name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="5k" x="53.92" y="34.5" smashed="yes">
 <attribute name="NAME" x="49.22" y="33.962" size="1.778" layer="25" font="vector" ratio="15" align="bottom-center"/>
 <attribute name="PROD_ID" value=" " x="84.4" y="-29" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="53.92" y="33.738" size="1.778" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="R15" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" " x="53.91" y="32.9" smashed="yes">
+<element name="R15" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k" x="53.91" y="32.9" smashed="yes">
 <attribute name="NAME" x="49.71" y="31.862" size="1.778" layer="25" font="vector" ratio="15" align="bottom-center"/>
 <attribute name="PROD_ID" value=" " x="88.2" y="-30.6" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="53.91" y="32.138" size="1.778" layer="27" font="vector" ratio="20" align="top-center"/>
@@ -1427,7 +1427,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value=" " x="93.9" y="38.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="27.352" y="19.65" size="1.778" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R29" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="1206" package3d_urn="urn:adsk.eagle:package:39654/1" value=" " x="78.19" y="21.03" smashed="yes" rot="R90">
+<element name="R29" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="1206" package3d_urn="urn:adsk.eagle:package:39654/1" value="0" x="78.19" y="21.03" smashed="yes" rot="R90">
 <attribute name="NAME" x="78.17" y="25.628" size="1.778" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value=" " x="145.5" y="47.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="78.952" y="21.03" size="1.778" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
@@ -1473,9 +1473,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.39" y="39.507" size="1.778" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="6.09" y="36.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="TP5" library="testpoint" package="1X01" value="" x="19.55" y="27.61" smashed="yes">
-<attribute name="NAME" x="18.68" y="29.407" size="1.778" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="18.28" y="26.086" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
+<element name="TP5" library="testpoint" package="1X01" value="" x="23.05" y="27.61" smashed="yes">
+<attribute name="NAME" x="22.18" y="29.407" size="1.778" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="21.78" y="26.086" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
 <element name="TP6" library="testpoint" package="1X01" value="" x="15.74" y="34.61" smashed="yes">
 <attribute name="NAME" x="13.67" y="36.207" size="1.778" layer="25" font="vector" ratio="15"/>
@@ -1619,7 +1619,7 @@ design rules under a new name.</description>
 <element name="U$21" library="BatteryCR2032" package="CR2032" value="CR2032" x="16.3" y="28.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="12.18" y="31.43" size="1.778" layer="26" rot="MR90"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF" x="12.7" y="21.5" smashed="yes" rot="R90">
+<element name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF - 25V" x="12.7" y="21.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.557" y="21.5" size="1.778" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-10300" x="12.7" y="21.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="13.843" y="21.5" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
@@ -2014,16 +2014,20 @@ design rules under a new name.</description>
 <vertex x="0" y="94"/>
 <vertex x="0" y="0"/>
 <vertex x="34" y="0"/>
+<vertex x="34" y="16"/>
+<vertex x="37" y="16"/>
+<vertex x="37" y="21"/>
+<vertex x="34" y="21"/>
 <vertex x="34" y="94"/>
 </polygon>
 <via x="16.5" y="76.9" extent="1-16" drill="0.35"/>
 <wire x1="16.545" y1="75.06" x2="16.545" y2="76.855" width="0.2" layer="1"/>
 <wire x1="16.545" y1="76.855" x2="16.5" y2="76.9" width="0.2" layer="1"/>
-<via x="15.3" y="68.1" extent="1-16" drill="0.35"/>
+<via x="14.4" y="69.8" extent="1-16" drill="0.35"/>
 <via x="19.2" y="76.9" extent="1-16" drill="0.35"/>
 <via x="19.2" y="68.1" extent="1-16" drill="0.35"/>
-<wire x1="15.275" y1="69.86" x2="15.275" y2="68.125" width="0.2" layer="1"/>
-<wire x1="15.275" y1="68.125" x2="15.3" y2="68.1" width="0.2" layer="1"/>
+<wire x1="15.275" y1="69.86" x2="14.46" y2="69.86" width="0.2" layer="1"/>
+<wire x1="14.46" y1="69.86" x2="14.4" y2="69.8" width="0.2" layer="1"/>
 <wire x1="19.085" y1="69.86" x2="19.085" y2="68.215" width="0.2" layer="1"/>
 <wire x1="19.085" y1="68.215" x2="19.2" y2="68.1" width="0.2" layer="1"/>
 <wire x1="19.085" y1="75.06" x2="19.085" y2="76.785" width="0.2" layer="1"/>
@@ -2071,12 +2075,6 @@ design rules under a new name.</description>
 <contactref element="U$20" pad="P$2"/>
 <contactref element="U$21" pad="P$1"/>
 <via x="16.6" y="30.2" extent="1-16" drill="0.35"/>
-<polygon width="0.254" layer="2">
-<vertex x="32" y="17"/>
-<vertex x="32" y="15"/>
-<vertex x="36.8" y="15"/>
-<vertex x="36.8" y="17"/>
-</polygon>
 <contactref element="C4" pad="2"/>
 <wire x1="32.89" y1="70.45" x2="32.0294" y2="70.45" width="0.254" layer="1"/>
 <wire x1="32.0294" y1="70.45" x2="32" y2="70.4794" width="0.254" layer="1"/>
@@ -2796,14 +2794,14 @@ design rules under a new name.</description>
 <contactref element="TP5" pad="1"/>
 <contactref element="R27" pad="2"/>
 <wire x1="26.59" y1="20.5" x2="26.59" y2="25.41" width="0.508" layer="1"/>
-<wire x1="24.39" y1="27.61" x2="19.55" y2="27.61" width="0.508" layer="1"/>
+<wire x1="24.39" y1="27.61" x2="23.05" y2="27.61" width="0.508" layer="1"/>
 <wire x1="26.59" y1="25.41" x2="24.39" y2="27.61" width="0.508" layer="1"/>
 <wire x1="15.23" y1="79.73" x2="20.3" y2="74.66" width="0.508" layer="16"/>
-<wire x1="19.55" y1="27.61" x2="20.3" y2="28.36" width="0.508" layer="16"/>
+<wire x1="23.05" y1="27.61" x2="20.3" y2="30.36" width="0.508" layer="16"/>
 <wire x1="20.3" y1="74.66" x2="20.3" y2="52.3" width="0.508" layer="16"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$3" pad="4"/>
-<wire x1="20.3" y1="52.3" x2="20.3" y2="28.36" width="0.508" layer="16"/>
+<wire x1="20.3" y1="52.3" x2="20.3" y2="30.36" width="0.508" layer="16"/>
 <wire x1="15.275" y1="75.06" x2="15.23" y2="75.105" width="0.2" layer="1"/>
 <wire x1="15.23" y1="75.105" x2="15.23" y2="79.73" width="0.508" layer="1"/>
 <contactref element="U$20" pad="P$1"/>
@@ -3179,7 +3177,7 @@ design rules under a new name.</description>
 <errors>
 <approved hash="21,19,d931db33db33d931"/>
 <approved hash="21,19,1fec1dee1dee1fec"/>
-<approved hash="20,2,5d785272b6f35566"/>
+<approved hash="20,2,9aa934cef7fa1c73"/>
 </errors>
 </board>
 </drawing>
